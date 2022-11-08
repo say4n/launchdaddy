@@ -10,6 +10,7 @@
 		A23B27012915E3750007F9F0 /* launchdaddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23B27002915E3750007F9F0 /* launchdaddyApp.swift */; };
 		A23B27052915E3760007F9F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23B27042915E3760007F9F0 /* Assets.xcassets */; };
 		A23B27082915E3760007F9F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A23B27072915E3760007F9F0 /* Preview Assets.xcassets */; };
+		A23B27132919C98A0007F9F0 /* CodeMirror-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = A23B27122919C98A0007F9F0 /* CodeMirror-SwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A23B27132919C98A0007F9F0 /* CodeMirror-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,9 @@
 			dependencies = (
 			);
 			name = launchdaddy;
+			packageProductDependencies = (
+				A23B27122919C98A0007F9F0 /* CodeMirror-SwiftUI */,
+			);
 			productName = launchdaddy;
 			productReference = A23B26FD2915E3750007F9F0 /* launchdaddy.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = A23B26F42915E3750007F9F0;
+			packageReferences = (
+				A23B27112919C98A0007F9F0 /* XCRemoteSwiftPackageReference "CodeMirror-SwiftUI" */,
+			);
 			productRefGroup = A23B26FE2915E3750007F9F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -328,6 +336,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A23B27112919C98A0007F9F0 /* XCRemoteSwiftPackageReference "CodeMirror-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Pictarine/CodeMirror-SwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A23B27122919C98A0007F9F0 /* CodeMirror-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A23B27112919C98A0007F9F0 /* XCRemoteSwiftPackageReference "CodeMirror-SwiftUI" */;
+			productName = "CodeMirror-SwiftUI";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A23B26F52915E3750007F9F0 /* Project object */;
 }
